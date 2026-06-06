@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="panel">
+  {% if item %}
+  <h2>{{ item.title }}</h2>
+  <p>{{ item.owner }} / {{ item.priority }} / {{ item.status }}</p>
+  <p>{{ item.note }}</p>
+  {% else %}
+  <p>未找到记录。</p>
+  {% endif %}
+</section>
+{% endblock %}

@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background: #f4f6fb;
+  color: #1a2433;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 28px;
+  background: #13233b;
+  color: #fff;
+}
+
+.topbar a {
+  color: #d7e3ff;
+  margin-left: 16px;
+  text-decoration: none;
+}
+
+.shell {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.panel,
+.cards article,
+.record-list li,
+.form {
+  background: #fff;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 12px 28px rgba(18, 32, 53, 0.08);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.record-list {
+  list-style: none;
+  padding: 0;
+}
+
+.record-list li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.form {
+  display: grid;
+  gap: 12px;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #cfd7e3;
+}
+
+button {
+  background: #1856ff;
+  color: #fff;
+  cursor: pointer;
+}

@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="panel">
+  <h2>仪表盘</h2>
+  <div class="cards">
+    <article><span>总记录</span><strong>{{ records|length }}</strong></article>
+    <article><span>进行中</span><strong>{{ records|selectattr("status", "equalto", "进行中")|list|length }}</strong></article>
+  </div>
+</section>
+{% endblock %}

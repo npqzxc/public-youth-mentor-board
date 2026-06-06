@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="panel">
+  <h2>记录列表</h2>
+  <ul class="record-list">
+    {% for item in records %}
+    <li><a href="/records/{{ item.record_id }}">{{ item.title }}</a><span>{{ item.owner }} / {{ item.status }}</span></li>
+    {% endfor %}
+  </ul>
+</section>
+{% endblock %}

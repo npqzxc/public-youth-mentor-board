@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="panel">
+  <h2>新建记录</h2>
+  <form id="record-form" class="form">
+    <input name="title" placeholder="标题" required />
+    <input name="owner" placeholder="负责人" required />
+    <textarea name="note" placeholder="说明" required></textarea>
+    <button type="submit">提交</button>
+  </form>
+  <p id="message"></p>
+</section>
+{% endblock %}

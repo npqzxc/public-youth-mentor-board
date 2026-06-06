@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+    <script defer src="{{ url_for('static', filename='app.js') }}"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <h1>Youth Mentor Board</h1>
+      <nav>
+        <a href="/">仪表盘</a>
+        <a href="/records">列表</a>
+        <a href="/create">新建</a>
+      </nav>
+    </header>
+    <main class="shell">
+      {% block content %}{% endblock %}
+    </main>
+  </body>
+</html>
